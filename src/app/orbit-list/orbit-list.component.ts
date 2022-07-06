@@ -3,7 +3,8 @@ import { Satellite } from '../satellite';
 
 @Component({
   selector: 'app-orbit-list',
-  templateUrl: './orbit-list.component.html',
+  templateUrl: './orbit-list.component.html', 
+  //templateUrl: 'displaylist',
   styleUrls: ['./orbit-list.component.css']
 })
 

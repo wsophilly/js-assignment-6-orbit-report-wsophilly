@@ -1,6 +1,14 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	<div>Total: <span class="counts-total">{{this.satellites.length}}</span></div>
 </div>
 
-<!-- TODO 4: add logic to count number of satellites displayed -->
+
+<div class="counts" *ngFor="let satType of satTypes">
+
+	<!-- TODO 3b: add style directive to conditionally highlight satellite type -->
+	<!-- TODO 4: add logic to count number of satellites displayed   Bonus mission  -->
+
+	<div>{{satType}}: <span class="counts-total">{{countByType(satType)}}</span></div>
+
+</div>
